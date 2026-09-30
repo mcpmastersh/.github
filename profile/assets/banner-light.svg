@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 580" width="1240" height="580" role="img" aria-labelledby="t d">
+<title id="t">mcpmastersh: connect your agents to anything</title>
+<desc id="d">Your coding agent connects to mcpmaster, one local MCP endpoint that fans out to every API and MCP server you use: github, stripe, linear, files. It also runs commands through mcpv, which decrypts secrets from an encrypted vault in memory, injects them into one process and masks them as [redacted] in the output.</desc>
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; }
+  .s { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; }
+  .kick { font-size: 12px; font-weight: 500; letter-spacing: .12em; fill: #5a46f0; }
+  .h1 { font-size: 40px; font-weight: 700; letter-spacing: -.02em; fill: #121216; }
+  .sub { font-size: 16px; fill: #3f3f4a; }
+  .lbl { font-size: 10.5px; font-weight: 500; letter-spacing: .1em; fill: #62626e; }
+  .nm { font-size: 19px; font-weight: 650; fill: #121216; }
+  .p { font-size: 13px; fill: #3f3f4a; }
+  .c { font-size: 12.5px; fill: #3f3f4a; }
+  .pn { font-size: 13px; font-weight: 600; fill: #121216; }
+  .pk { font-size: 11.5px; fill: #62626e; }
+  .ink { fill: #4a37d9; } .red { fill: #d92d20; font-weight: 600; } .ok { fill: #067647; }
+  .box { fill: #fafafb; stroke: #e1e1e8; stroke-width: 1.2; }
+  .hero { fill: #efecff; stroke: #5a46f0; stroke-width: 1.6; }
+  .pill { fill: #fafafb; stroke: #e1e1e8; stroke-width: 1; }
+  .wire { fill: none; stroke: #e1e1e8; stroke-width: 1.4; }
+  .flow { fill: none; stroke: #5a46f0; stroke-width: 1.6; stroke-dasharray: 6 5; animation: march 1.4s linear infinite; }
+  .ref { fill: none; stroke: #62626e; stroke-width: 1.2; stroke-dasharray: 3 4; }
+  .dot { fill: #5a46f0; }
+  .rdot { fill: #d92d20; }
+  .live { fill: #067647; animation: blink 2.4s ease-in-out infinite; }
+  @keyframes march { to { stroke-dashoffset: -22; } }
+  @keyframes blink { 50% { opacity: .3; } }
+  @media (prefers-reduced-motion: reduce) { .flow, .live { animation: none; } .anim { display: none; } }
+</style>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 10 5 0 9z" fill="#5a46f0"/></marker>
+  <symbol id="pm" viewBox="0 0 64 64"><rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="#ffffff" stroke="#e1e1e8"/><circle cx="32" cy="32" r="19" fill="none" stroke="#5a46f0" stroke-width="4.5"/><path d="M51 32h6" fill="none" stroke-linecap="round" stroke="#5a46f0" stroke-width="4.5"/><path d="M23.5 40V25l8.5 9 8.5-9v15" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#121216" stroke-width="4.4"/></symbol>
+  <symbol id="pv" viewBox="0 0 64 64"><rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="#ffffff" stroke="#e1e1e8"/><path d="M23 15h-7v34h7M41 15h7v34h-7" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke="#5a46f0"/><path d="M25 25.5 32 40.5 39 25.5" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke="#121216"/></symbol>
+  <path id="r1" d="M300 300C385 300 385 265 470 265H770C860 265 860 200 950 200"/>
+  <path id="r2" d="M300 300C385 300 385 265 470 265H770C860 265 860 290 950 290"/>
+  <path id="r3" d="M300 350C385 350 385 445 470 445H950"/>
+  <path id="r4" d="M470 445C385 445 385 350 300 350"/>
+</defs>
+<rect x=".5" y=".5" width="1239" height="579" rx="18" fill="#ffffff" stroke="#e1e1e8"/>
+<text x="40" y="58" class="kick">MCPMASTERSH · LOCAL-FIRST TOOLS FOR AI AGENTS · APACHE-2.0</text>
+<text x="40" y="112" class="s h1">Connect your agents to anything.</text>
+<text x="40" y="146" class="s sub">One MCP endpoint for every API you use, and secrets your agent can use without ever seeing them.</text>
+<line x1="40" y1="176" x2="1200" y2="176" stroke="#ececf1"/>
+
+<path class="flow" d="M300 300C385 300 385 265 470 265" marker-end="url(#ar)"/>
+<path class="flow" d="M300 350C385 350 385 445 470 445" marker-end="url(#ar)"/>
+<path class="wire" d="M770 265C860 265 860 200 946 200"/>
+<path class="wire" d="M770 265C860 265 860 245 946 245"/>
+<path class="wire" d="M770 265C860 265 860 290 946 290"/>
+<path class="wire" d="M770 265C860 265 860 335 946 335"/>
+<path class="flow" d="M770 445H946" marker-end="url(#ar)"/>
+<g class="anim">
+<circle r="4.5" class="dot"><animateMotion dur="3.2s" begin="0s" repeatCount="indefinite" rotate="auto"><mpath href="#r1"/></animateMotion></circle>
+<circle r="4.5" class="dot"><animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" rotate="auto"><mpath href="#r2"/></animateMotion></circle>
+<circle r="4.5" class="dot"><animateMotion dur="3.6s" begin=".8s" repeatCount="indefinite" rotate="auto"><mpath href="#r3"/></animateMotion></circle>
+<circle r="4.5" class="rdot"><animateMotion dur="2.4s" begin="2.2s" repeatCount="indefinite" rotate="auto"><mpath href="#r4"/></animateMotion></circle>
+</g>
+<rect x="40" y="228" width="260" height="190" rx="12" class="box"/>
+<text x="60" y="256" class="lbl">YOUR AGENT</text>
+<circle cx="272" cy="252" r="4" class="live"/>
+<text x="60" y="288" class="s nm">Claude Code</text>
+<text x="60" y="312" class="p s">Codex · Cursor · VS Code</text>
+<text x="60" y="332" class="p s">Windsurf · OpenCode</text>
+<line x1="60" y1="350" x2="280" y2="350" stroke="#ececf1"/>
+<text x="60" y="374" class="c"><tspan class="ink">&gt;</tspan> list my open issues</text>
+<text x="60" y="398" class="c"><tspan class="ink">$</tspan> mcpv run -- npm test</text>
+<rect x="470" y="200" width="300" height="134" rx="12" class="hero"/>
+<use href="#pm" x="490" y="220" width="44" height="44"/>
+<text x="548" y="240" class="s nm">mcpmaster</text>
+<text x="548" y="260" class="lbl">ONE MCP ENDPOINT</text>
+<text x="490" y="292" class="c">1 <tspan class="ink">execute</tspan> tool · 1,642 behind it</text>
+<text x="490" y="314" class="c">~515 tokens, not ~401,000</text>
+<rect x="470" y="380" width="300" height="134" rx="12" class="hero"/>
+<use href="#pv" x="490" y="400" width="44" height="44"/>
+<text x="548" y="420" class="s nm">mcpv</text>
+<text x="548" y="440" class="lbl">ENCRYPTED VAULT</text>
+<text x="490" y="472" class="c">AES-256-GCM · offline · in memory</text>
+<text x="490" y="494" class="c">output masked as <tspan class="red">[redacted]</tspan></text>
+<text x="306" y="478" class="pk">agent sees <tspan class="red">[redacted]</tspan></text>
+<text x="950" y="174" class="lbl" dy="10" opacity="0"> </text>
+<rect x="950" y="184" width="250" height="32" rx="8" class="pill"/><text x="966" y="204.5" class="pn">github</text><text x="1184" y="204.5" class="pk" text-anchor="end">OpenAPI</text>
+<rect x="950" y="229" width="250" height="32" rx="8" class="pill"/><text x="966" y="249.5" class="pn">stripe</text><text x="1184" y="249.5" class="pk" text-anchor="end">OpenAPI</text>
+<rect x="950" y="274" width="250" height="32" rx="8" class="pill"/><text x="966" y="294.5" class="pn">linear</text><text x="1184" y="294.5" class="pk" text-anchor="end">GraphQL</text>
+<rect x="950" y="319" width="250" height="32" rx="8" class="pill"/><text x="966" y="339.5" class="pn">files</text><text x="1184" y="339.5" class="pk" text-anchor="end">stdio MCP</text>
+<text x="950" y="372" class="pk">+ any OpenAPI, GraphQL or MCP server</text>
+<rect x="950" y="429" width="250" height="32" rx="8" class="pill"/><text x="966" y="449.5" class="pn">npm run dev</text><text x="1184" y="449.5" class="pk ok" text-anchor="end">keys injected</text>
+<text x="950" y="486" class="pk">one child process, nothing on disk</text>
+<line x1="40" y1="540" x2="1200" y2="540" stroke="#ececf1" opacity="0"/>
+<text x="40" y="552" class="pk">self-hosted, free and open source</text>
+<text x="1200" y="552" class="pk" text-anchor="end">hosted: <tspan class="ink">mcpmaster.sh</tspan></text>
+</svg>
